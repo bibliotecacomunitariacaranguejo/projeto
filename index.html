@@ -388,15 +388,13 @@ function saveStory() {
         localStorage.setItem('activities', JSON.stringify(activities));
 
         alert('História salva com sucesso!');
+        document.getElementById('storyText').value = ''; // Limpa o campo de texto
         showPage('mainPage');
     } else {
         alert('Por favor, escreva sua história.');
     }
 }
 
-
-
-        // Função para mostrar atividades realizadas
 // Função para mostrar atividades realizadas
 function showActivities() {
     const activitiesList = document.getElementById('activitiesList');
