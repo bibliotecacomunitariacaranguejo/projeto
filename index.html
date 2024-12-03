@@ -367,10 +367,12 @@
 
         // Função para selecionar uma imagem
         function selectImage(imageSrc) {
-            selectedImage = imageSrc;
-            document.getElementById('selectedImage').src = imageSrc;
-            showPage('storyPage');
-        }
+    selectedImage = imageSrc;
+    document.getElementById('selectedImage').src = imageSrc;
+    document.getElementById('storyText').value = ''; // Limpa o campo de texto
+    showPage('storyPage');
+}
+
 
         // Função para salvar a história
 function saveStory() {
