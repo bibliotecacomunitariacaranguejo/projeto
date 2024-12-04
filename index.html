@@ -270,7 +270,7 @@
 <div id="galleryPage" class="hidden">
     <h2>Escolha uma imagem e crie sua história</h2>
     <div class="gallery" id="gallery"></div>
-    <button class="back-button" onclick="showPage('main')">Voltar</button>
+    <button class="back-button" onclick="showPage('Atividades')">Voltar</button>
 </div>
 
 <script>
@@ -356,7 +356,7 @@
         function loadGallery() {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = ''; // Limpa a galeria antes de carregar
-            for (let i = 1; i <= 100; i++) {
+            for (let i = 1; i <= 130; i++) {
                 const img = document.createElement('img');
                 img.src = `imagens/imagem${i}.jpg`; // Ajuste o caminho conforme necessário
                 img.alt = `Imagem ${i}`;
